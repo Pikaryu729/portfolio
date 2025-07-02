@@ -1,20 +1,18 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import MySocialIcons from "./MySocialIcons";
+import MySkillIcons from "./MySkillIcons";
 import { Download, ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   const skills = [
-    "Python",
-    "TensorFlow",
-    "PyTorch",
-    "Scikit-learn",
-    "React",
-    "Node.js",
-    "AWS",
-    "Docker",
-    "Kubernetes",
+    "python",
+    "docker",
+    "postgresql",
+    "tensorflow-original",
+    "scikitlearn",
+    "pandas",
   ];
 
   return (
@@ -49,20 +47,7 @@ export default function HeroSection() {
               <h3 className="text-sm font-semibold uppercase tracking-wide">
                 Technologies & Skills
               </h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill, index) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="px-3 py-1 border border-gray-200 hover:bg-blue-50 transition-colors"
-                    style={{
-                      animationDelay: `${index * 100}ms`,
-                    }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
+              <MySkillIcons />
             </div>
 
             {/* CTA Buttons */}
