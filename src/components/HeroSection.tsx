@@ -44,7 +44,7 @@ export default function HeroSection() {
 
             {/* Skills */}
             <div className="space-y-3">
-              <h3 className="text-sm font-semibold uppercase tracking-wide">
+              <h3 className="text-lg font-semibold uppercase tracking-wide">
                 Technologies & Skills
               </h3>
               <MySkillIcons />
@@ -71,7 +71,7 @@ export default function HeroSection() {
             </div>
 
             {/* Social Links */}
-            <MySocialIcons iconSize={30} />
+            <MySocialIcons iconSize={40} />
           </div>
 
           {/* Image/Visual */}
@@ -90,31 +90,6 @@ export default function HeroSection() {
                   height={400}
                   className="w-full h-auto rounded-xl"
                 />
-
-                {/* Floating elements */}
-                <div className="absolute -top-4 -right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg animate-bounce">
-                  <span className="text-sm font-bold">ML</span>
-                </div>
-
-                <div className="absolute -bottom-4 -left-4 bg-purple-500 text-white p-3 rounded-full shadow-lg animate-pulse">
-                  <span className="text-sm font-bold">AI</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mt-8 text-center">
-              <div className="backdrop-blur-sm rounded-lg p-4 shadow-md">
-                <div className="text-2xl font-bold text-blue-600">50+</div>
-                <div className="text-sm ">Projects</div>
-              </div>
-              <div className="backdrop-blur-sm rounded-lg p-4 shadow-md">
-                <div className="text-2xl font-bold text-purple-600">5+</div>
-                <div className="text-sm ">Years Exp</div>
-              </div>
-              <div className="rounded-lg p-4 shadow-md">
-                <div className="text-2xl font-bold text-green-600">10+</div>
-                <div className="text-sm ">ML Models</div>
               </div>
             </div>
           </div>

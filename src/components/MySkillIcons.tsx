@@ -98,12 +98,10 @@ export default function MySkillIcons() {
     <div className="grid grid-cols-4 gap-2">
       {skills.map((skill, index) => {
         return (
-          <HoverCard>
+          <HoverCard key={index}>
             <HoverCardTrigger asChild>
-              <Card
-                className="p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow items-center"
-                key={index}
-              >
+              <Card className="flex items-center p-4 rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition-all duration-500 ease-in-out">
+                {" "}
                 {skill.icon}
               </Card>
             </HoverCardTrigger>
