@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -22,8 +21,9 @@ export default function NavBar() {
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
   ];
+
   return (
-    <nav className="text-foreground">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
@@ -76,7 +76,7 @@ export default function NavBar() {
       <div
         className={`md:hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden border-t`}
+        } overflow-hidden border-t bg-background/95 backdrop-blur-sm`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navLinks.map((link) => (
