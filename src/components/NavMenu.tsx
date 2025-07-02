@@ -6,11 +6,21 @@ import Link from "next/link";
 
 export default function NavMenu() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="flex gap-4">
       <NavigationMenuLink asChild>
-        <Link className="text-blue-600" href="#projects">
-          Projects
-        </Link>
+        <Link href="#hero">Ryushin Wells</Link>
+      </NavigationMenuLink>
+      <NavigationMenuLink asChild>
+        <Link href="#about-me">About</Link>
+      </NavigationMenuLink>
+      <NavigationMenuLink asChild>
+        <Link href="#projects">Projects</Link>
+      </NavigationMenuLink>
+      <NavigationMenuLink asChild>
+        <Link href="#skills">Skills</Link>
+      </NavigationMenuLink>
+      <NavigationMenuLink asChild>
+        <Link href="#contact">Contact</Link>
       </NavigationMenuLink>
     </NavigationMenu>
   );
