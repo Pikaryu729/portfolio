@@ -1,21 +1,11 @@
 import { Button } from "@/components/ui/button";
 import MySocialIcons from "./MySocialIcons";
 import MySkillIcons from "./MySkillIcons";
-import { Download, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import DownloadResumeBtn from "./DownloadResumeBtn";
 
 export default function HeroSection() {
-  const skills = [
-    "python",
-    "docker",
-    "postgresql",
-    "tensorflow-original",
-    "scikitlearn",
-    "pandas",
-  ];
-
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-12">
       <div className="max-w-6xl mx-auto">
