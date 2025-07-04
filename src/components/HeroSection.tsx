@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import MySocialIcons from "./MySocialIcons";
 import MySkillIcons from "./MySkillIcons";
 import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 import DownloadResumeBtn from "./DownloadResumeBtn";
 
@@ -46,9 +47,12 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
+                asChild
               >
-                View My Projects
-                <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <Link href="/projects">
+                  View My Projects
+                  <ExternalLink className="h-4 w-4 " />
+                </Link>
               </Button>
 
               <DownloadResumeBtn />
@@ -68,7 +72,7 @@ export default function HeroSection() {
               {/* Main image container */}
               <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
                 <Image
-                  src="/ryu.JPG"
+                  src="/ryu.jpg"
                   alt="Ryushin Wells"
                   width={400}
                   height={400}

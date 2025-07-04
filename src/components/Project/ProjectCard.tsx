@@ -1,14 +1,14 @@
-import { SocialIcon } from "react-social-icons";
 import { Project } from "./types";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 type Props = {
@@ -17,15 +17,18 @@ type Props = {
 
 function ProjectCard({ project }: Props) {
   return (
-    <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+    <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
       <div className="relative overflow-hidden rounded-t-lg">
         <Image
           src={project.image || "/placeholder.svg"}
           alt={project.title}
           width={300}
           height={200}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-48 object-cover"
         />
+        <div className="absolute top-2 right-2">
+          <Badge variant="secondary">{project.category}</Badge>
+        </div>
       </div>
       <CardHeader>
         <CardTitle className="text-lg">{project.title}</CardTitle>
@@ -33,7 +36,7 @@ function ProjectCard({ project }: Props) {
           {project.description}
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 flex-1">
         <div className="flex flex-wrap gap-1">
           {project.technologies.map((tech) => (
             <Badge key={tech} variant="outline" className="text-xs">
@@ -41,22 +44,15 @@ function ProjectCard({ project }: Props) {
             </Badge>
           ))}
         </div>
-        <div className="flex gap-2">
-          <Button
-            size="sm"
-            variant="outline"
-            className="flex-1 bg-transparent"
-            asChild
-          >
-            <SocialIcon
-              style={{ height: "100%", width: "100%" }}
-              borderRadius="25%"
-              url={project.githubUrl}
-              target="_blank"
-            />
-          </Button>
-        </div>
       </CardContent>
+      <CardFooter className="mt-auto">
+        <Button size="sm" variant="outline" className="flex-1" asChild>
+          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+            <Image src="github.svg" alt="github logo" width={20} height={20} />
+            Code
+          </a>
+        </Button>
+      </CardFooter>
     </Card>
   );
 }
