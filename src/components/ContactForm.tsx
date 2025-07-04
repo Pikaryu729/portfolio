@@ -108,7 +108,9 @@ export default function ContactPage() {
         <div className="flex justify-center">
           <Card className="w-full max-w-2xl">
             <CardHeader>
-              <CardTitle>Send Message</CardTitle>
+              <CardTitle className="text-center text-xl">
+                Send Message
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
