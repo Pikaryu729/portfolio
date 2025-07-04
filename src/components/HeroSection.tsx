@@ -4,6 +4,7 @@ import MySkillIcons from "./MySkillIcons";
 import { Download, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import DownloadResumeBtn from "./DownloadResumeBtn";
 
 export default function HeroSection() {
   const skills = [
@@ -60,14 +61,7 @@ export default function HeroSection() {
                 <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
 
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg transition-all duration-300 bg-transparent"
-              >
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </Button>
+              <DownloadResumeBtn />
             </div>
 
             {/* Social Links */}
@@ -84,8 +78,8 @@ export default function HeroSection() {
               {/* Main image container */}
               <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Alex Chen - ML Engineer"
+                  src="/ryu.JPG"
+                  alt="Ryushin Wells"
                   width={400}
                   height={400}
                   className="w-full h-auto rounded-xl"
