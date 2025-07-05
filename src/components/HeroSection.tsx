@@ -18,20 +18,36 @@ export default function HeroSection() {
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
                 Available for opportunities
               </div>
-
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 Ryushin Wells
               </h1>
-
               <h2 className="text-2xl lg:text-3xl font-semibold text-blue-600">
                 Machine Learning & Software Engineer
               </h2>
-
               <p className="text-xl leading-relaxed max-w-2xl">
                 Passionate about building intelligent systems that solve
                 real-world problems. I specialize in deep learning, computer
                 vision, and scalable software architecture.
               </p>
+            </div>
+
+            {/* Mobile Image - Shows only on mobile, hidden on desktop */}
+            <div className="relative lg:hidden">
+              <div className="relative w-full max-w-md mx-auto">
+                {/* Background decoration */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl transform rotate-6 opacity-20"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl transform -rotate-6 opacity-20"></div>
+                {/* Main image container */}
+                <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
+                  <Image
+                    src="/ryu.jpg"
+                    alt="Ryushin Wells"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto rounded-xl"
+                  />
+                </div>
+              </div>
             </div>
 
             {/* Skills */}
@@ -41,7 +57,6 @@ export default function HeroSection() {
               </h3>
               <MySkillIcons />
             </div>
-
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -54,21 +69,18 @@ export default function HeroSection() {
                   <ExternalLink className="h-4 w-4 " />
                 </Link>
               </Button>
-
               <DownloadResumeBtn />
             </div>
-
             {/* Social Links */}
             <MySocialIcons iconSize={40} />
           </div>
 
-          {/* Image/Visual */}
-          <div className="relative">
+          {/* Desktop Image - Shows only on desktop, hidden on mobile */}
+          <div className="relative hidden lg:block">
             <div className="relative w-full max-w-md mx-auto">
               {/* Background decoration */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl transform rotate-6 opacity-20"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl transform -rotate-6 opacity-20"></div>
-
               {/* Main image container */}
               <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
                 <Image
