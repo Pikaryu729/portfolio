@@ -20,7 +20,7 @@ function ProjectCarousel() {
     {
       title: "Wordle Solver",
       description: "wordle solver command line tool built in python",
-      image: "/wordle.png",
+      image: "/wordle.webp",
       technologies: ["Python", "Information Theory", "Statistics"],
       githubUrl: "https://github.com/Pikaryu729/wordle",
       category: "AI",
@@ -28,7 +28,7 @@ function ProjectCarousel() {
     {
       title: "Portfolio",
       description: "The portfolio app you are on right now",
-      image: "/portfolio.jpg",
+      image: "/portfolio.webp",
       technologies: ["Next.js", "Typescript", "UI/UX"],
       githubUrl: "https://github.com/Pikaryu729/portfolio",
       category: "Front End",
@@ -37,7 +37,7 @@ function ProjectCarousel() {
       title: "Titanic Surival App",
       description:
         "Interactive web app that uses machine learning to predict chance of surviving the sinking titanic",
-      image: "/titanic-eda.jpg",
+      image: "/titanic-eda.webp",
       technologies: ["Docker", "Azure", "Machine Learning", "Python", "React"],
       githubUrl: "https://github.com/Pikaryu729/titanic_eda",
       category: "AI/ML + Front End",

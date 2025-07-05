@@ -40,7 +40,7 @@ export default function HeroSection() {
                 {/* Main image container */}
                 <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
                   <Image
-                    src="/ryu.jpg"
+                    src="/ryu.webp"
                     alt="Ryushin Wells"
                     width={400}
                     height={400}
