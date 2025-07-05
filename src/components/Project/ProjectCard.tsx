@@ -48,7 +48,7 @@ function ProjectCard({ project }: Props) {
       <CardFooter className="mt-auto">
         <Button size="sm" variant="outline" className="flex-1" asChild>
           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-            <Image src="github.svg" alt="github logo" width={20} height={20} />
+            <Image src="/github.svg" alt="github logo" width={20} height={20} />
             Code
           </a>
         </Button>
