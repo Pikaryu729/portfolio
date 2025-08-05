@@ -14,11 +14,7 @@ export default function HeroSection() {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-                Available for opportunities
-              </div>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mt-12">
                 Ryushin Wells
               </h1>
               <h2 className="text-2xl lg:text-3xl font-semibold text-blue-600">
