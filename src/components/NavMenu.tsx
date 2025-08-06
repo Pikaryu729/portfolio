@@ -17,7 +17,7 @@ export default function NavBar() {
   };
 
   const navLinks = [
-    // { href: "#about", label: "About" },
+    { href: "/blog", label: "Blog" },
     { href: "/projects", label: "Projects" },
     { href: "/contact", label: "Contact" },
   ];
@@ -29,7 +29,7 @@ export default function NavBar() {
           {/* Logo/Brand */}
           <Link
             href="/"
-            className="text-xl font-bold hover:text-blue-600 transition-colors"
+            className="text-xl font-bold hover:primary transition-colors"
           >
             Ryushin Wells
           </Link>

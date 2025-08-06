@@ -43,7 +43,9 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <NavMenu />
+            <div className="pt-16">
             {children}
+            </div>
           </ThemeProvider>
         </body>
       </html>
