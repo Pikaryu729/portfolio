@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="sonix async web framework stack">
+  <defs>
+    <linearGradient id="sx-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="0.55" stop-color="#4c1d95"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+    <radialGradient id="sx-glow" cx="0.2" cy="0.14" r="0.75">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="sx-grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sx-bg)"/>
+  <rect width="1200" height="800" fill="url(#sx-grid)"/>
+  <rect width="1200" height="800" fill="url(#sx-glow)"/>
+
+  <rect x="110" y="120" width="980" height="560" rx="24" fill="#120b2e" stroke="#ffffff" stroke-opacity="0.12"/>
+  <circle cx="150" cy="160" r="7" fill="#ff5f57"/>
+  <circle cx="176" cy="160" r="7" fill="#febc2e"/>
+  <circle cx="202" cy="160" r="7" fill="#28c840"/>
+  <text x="238" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="21" font-weight="700" fill="#c4b5fd">sonix</text>
+  <rect x="950" y="145" width="100" height="31" rx="15.5" fill="#ffffff" fill-opacity="0.06" stroke="#a78bfa" stroke-opacity="0.5"/>
+  <text x="1000" y="166" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" fill="#c4b5fd">ASGI</text>
+  <line x1="110" y1="189" x2="1090" y2="189" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <text x="150" y="228" font-size="15" font-weight="600" fill="#c4b5fd" letter-spacing="2">FROM THE SOCKET UP</text>
+  <text x="150" y="260" font-size="24" fill="#ede9fe">The whole stack, implemented in-house</text>
+
+  <!-- layers -->
+  <g>
+    <rect x="266" y="300" width="504" height="54" rx="12" fill="#312e81" fill-opacity="0.75" stroke="#a78bfa" stroke-opacity="0.85"/>
+    <circle cx="238" cy="327" r="15" fill="#6d28d9"/>
+    <text x="238" y="333" text-anchor="middle" font-size="15" font-weight="700" fill="#ede9fe">1</text>
+    <text x="294" y="334" font-family="ui-monospace, monospace" font-size="18" fill="#ede9fe">HTTP/1.1 parser</text>
+
+    <rect x="266" y="366" width="504" height="54" rx="12" fill="#312e81" fill-opacity="0.6" stroke="#a78bfa" stroke-opacity="0.5"/>
+    <circle cx="238" cy="393" r="15" fill="#6d28d9"/>
+    <text x="238" y="399" text-anchor="middle" font-size="15" font-weight="700" fill="#ede9fe">2</text>
+    <text x="294" y="400" font-family="ui-monospace, monospace" font-size="18" fill="#ede9fe">asyncio.Protocol transport</text>
+
+    <rect x="266" y="432" width="504" height="54" rx="12" fill="#312e81" fill-opacity="0.6" stroke="#a78bfa" stroke-opacity="0.5"/>
+    <circle cx="238" cy="459" r="15" fill="#6d28d9"/>
+    <text x="238" y="465" text-anchor="middle" font-size="15" font-weight="700" fill="#ede9fe">3</text>
+    <text x="294" y="466" font-family="ui-monospace, monospace" font-size="18" fill="#ede9fe">ASGI bridge + lifespan</text>
+
+    <rect x="266" y="498" width="504" height="54" rx="12" fill="#312e81" fill-opacity="0.6" stroke="#a78bfa" stroke-opacity="0.5"/>
+    <circle cx="238" cy="525" r="15" fill="#6d28d9"/>
+    <text x="238" y="531" text-anchor="middle" font-size="15" font-weight="700" fill="#ede9fe">4</text>
+    <text x="294" y="532" font-family="ui-monospace, monospace" font-size="18" fill="#ede9fe">router + dependency injection</text>
+
+    <rect x="266" y="564" width="504" height="54" rx="12" fill="#312e81" fill-opacity="0.6" stroke="#a78bfa" stroke-opacity="0.5"/>
+    <circle cx="238" cy="591" r="15" fill="#6d28d9"/>
+    <text x="238" y="597" text-anchor="middle" font-size="15" font-weight="700" fill="#ede9fe">5</text>
+    <text x="294" y="598" font-family="ui-monospace, monospace" font-size="18" fill="#ede9fe">WebSocket frame codec</text>
+  </g>
+
+  <!-- bracket -->
+  <path d="M792 300 H812 V618 H792" fill="none" stroke="#c4b5fd" stroke-opacity="0.6" stroke-width="2"/>
+  <text x="830" y="452" font-size="19" font-weight="700" fill="#ede9fe">100%</text>
+  <text x="830" y="478" font-size="19" font-weight="700" fill="#ede9fe">from scratch</text>
+  <text x="830" y="508" font-size="14" fill="#c4b5fd">no uvicorn inside</text>
+
+  <text x="150" y="652" font-family="ui-monospace, monospace" font-size="16" fill="#c4b5fd">$ uv run sonix  →  serving on http://127.0.0.1:8000</text>
+</svg>

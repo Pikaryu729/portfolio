@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="typesafe SSH typing race terminal">
+  <defs>
+    <linearGradient id="ts-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#431407"/>
+      <stop offset="0.55" stop-color="#7c2d12"/>
+      <stop offset="1" stop-color="#b45309"/>
+    </linearGradient>
+    <radialGradient id="ts-glow" cx="0.8" cy="0.16" r="0.75">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ts-grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="ts-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#ts-bg)"/>
+  <rect width="1200" height="800" fill="url(#ts-grid)"/>
+  <rect width="1200" height="800" fill="url(#ts-glow)"/>
+
+  <rect x="110" y="120" width="980" height="560" rx="24" fill="#1c1207" stroke="#ffffff" stroke-opacity="0.14"/>
+  <circle cx="150" cy="160" r="7" fill="#ff5f57"/>
+  <circle cx="176" cy="160" r="7" fill="#febc2e"/>
+  <circle cx="202" cy="160" r="7" fill="#28c840"/>
+  <text x="238" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#fcd34d">typesafe — race #7QK2</text>
+  <rect x="900" y="145" width="150" height="31" rx="15.5" fill="#ffffff" fill-opacity="0.06" stroke="#fbbf24" stroke-opacity="0.5"/>
+  <text x="975" y="166" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" fill="#fcd34d">ssh -p 2222</text>
+  <line x1="110" y1="189" x2="1090" y2="189" stroke="#ffffff" stroke-opacity="0.09"/>
+
+  <!-- passage -->
+  <text x="150" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="27">
+    <tspan fill="#86efac">the quick brown fox </tspan><tspan fill="#fbbf24">▊</tspan><tspan fill="#fef3c7" fill-opacity="0.5">jumps over</tspan>
+  </text>
+  <text x="150" y="304" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="27">
+    <tspan fill="#fef3c7" fill-opacity="0.5">the lazy dog while everyone races</tspan>
+  </text>
+
+  <!-- stats -->
+  <g>
+    <text x="150" y="404" font-size="52" font-weight="700" fill="#fde68a">87</text>
+    <text x="150" y="432" font-size="14" fill="#fbbf24" letter-spacing="2">WORDS / MIN</text>
+
+    <text x="470" y="404" font-size="52" font-weight="700" fill="#fde68a">98%</text>
+    <text x="470" y="432" font-size="14" fill="#fbbf24" letter-spacing="2">ACCURACY</text>
+
+    <text x="790" y="404" font-size="52" font-weight="700" fill="#fde68a">12.4s</text>
+    <text x="790" y="432" font-size="14" fill="#fbbf24" letter-spacing="2">ELAPSED</text>
+  </g>
+
+  <!-- race bars -->
+  <text x="150" y="492" font-family="ui-monospace, monospace" font-size="16" fill="#fde68a">you</text>
+  <rect x="230" y="474" width="760" height="26" rx="13" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="230" y="474" width="612" height="26" rx="13" fill="url(#ts-bar)"/>
+  <text x="1002" y="494" text-anchor="end" font-family="ui-monospace, monospace" font-size="16" fill="#fef3c7">82%</text>
+
+  <text x="150" y="548" font-family="ui-monospace, monospace" font-size="16" fill="#fda4af">nova</text>
+  <rect x="230" y="530" width="760" height="26" rx="13" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="230" y="530" width="494" height="26" rx="13" fill="#fb7185"/>
+  <text x="1002" y="550" text-anchor="end" font-family="ui-monospace, monospace" font-size="16" fill="#fecdd3">66%</text>
+
+  <line x1="150" y1="596" x2="1050" y2="596" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="150" y="634" font-family="ui-monospace, monospace" font-size="16" fill="#fcd34d">esc quit    tab skip    c link device    ? help</text>
+</svg>

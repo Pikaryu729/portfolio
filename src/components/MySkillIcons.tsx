@@ -1,4 +1,3 @@
-import React from "react";
 import PythonOriginal from "devicons-react/icons/PythonOriginal";
 import ReactOriginal from "devicons-react/icons/ReactOriginal";
 import ScikitlearnOriginal from "devicons-react/icons/ScikitlearnOriginal";
@@ -11,71 +10,38 @@ import NextjsOriginal from "devicons-react/icons/NextjsOriginal";
 import PandasOriginal from "devicons-react/icons/PandasOriginal";
 import PostgresqlOriginal from "devicons-react/icons/PostgresqlOriginal";
 import TypescriptOriginal from "devicons-react/icons/TypescriptOriginal";
-import { Card } from "@/components/ui/card";
+
+const size = 40;
+
+const skills = [
+  { label: "Python", icon: <PythonOriginal size={size} /> },
+  { label: "TypeScript", icon: <TypescriptOriginal size={size} /> },
+  { label: "React", icon: <ReactOriginal size={size} /> },
+  { label: "Next.js", icon: <NextjsOriginal size={size} /> },
+  { label: "FastAPI", icon: <FastapiOriginal size={size} /> },
+  { label: "scikit-learn", icon: <ScikitlearnOriginal size={size} /> },
+  { label: "Pandas", icon: <PandasOriginal size={size} /> },
+  { label: "PostgreSQL", icon: <PostgresqlOriginal size={size} /> },
+  { label: "Docker", icon: <DockerOriginal size={size} /> },
+  { label: "AWS", icon: <AmazonWebServices size={size} /> },
+  { label: "Linux", icon: <LinuxOriginal size={size} /> },
+  { label: "Git", icon: <Git size={size} /> },
+];
 
 export default function MySkillIcons() {
-  const size = 55;
-  const skills = [
-    {
-      icon: <PythonOriginal size={size} />,
-      href: "https://python.org",
-    },
-    {
-      icon: <ReactOriginal size={size} />,
-      href: "https://react.dev",
-    },
-    {
-      icon: <ScikitlearnOriginal size={size} />,
-      href: "https://scikit-learn.org",
-    },
-    {
-      icon: <AmazonWebServices size={size} />,
-      href: "https://aws.amazon.com",
-    },
-    {
-      icon: <Git size={size} />,
-      href: "https://git-scm.com",
-    },
-    {
-      icon: <LinuxOriginal size={size} />,
-      href: "https://linux.org",
-    },
-    {
-      icon: <NextjsOriginal size={size} />,
-      href: "https://nextjs.org",
-    },
-    {
-      icon: <PandasOriginal size={size} />,
-      href: "https://pandas.pydata.org",
-    },
-    {
-      icon: <PostgresqlOriginal size={size} />,
-      href: "https://postgresql.org",
-    },
-    {
-      icon: <TypescriptOriginal size={size} />,
-      href: "https://typescriptlang.org",
-    },
-    {
-      icon: <DockerOriginal size={size} />,
-      href: "https://docker.com",
-    },
-    {
-      icon: <FastapiOriginal size={size} />,
-      href: "https://fastapi.tiangolo.com",
-    },
-  ];
   return (
-    <div className="grid grid-cols-4 gap-2">
-      {skills.map((skill) => {
-        return (
-          <a href={skill.href} target="_blank" key={skill.href}>
-            <Card className="flex items-center p-4 rounded-lg shadow-md transform hover:scale-105 hover:shadow-xl transition-all duration-500 ease-in-out">
-              {skill.icon}
-            </Card>
-          </a>
-        );
-      })}
+    <div className="grid max-w-2xl grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-3 lg:grid-cols-6">
+      {skills.map((skill) => (
+        <div
+          key={skill.label}
+          title={skill.label}
+          className="group flex aspect-square items-center justify-center rounded-xl border bg-background/50 p-3 transition-all duration-300 hover:-translate-y-1 hover:border-brand/50 hover:shadow-md"
+        >
+          <span className="opacity-80 transition-opacity duration-300 group-hover:opacity-100">
+            {skill.icon}
+          </span>
+        </div>
+      ))}
     </div>
   );
 }

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="openrep local-first strength training dashboard">
+  <defs>
+    <linearGradient id="or-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c0519"/>
+      <stop offset="0.55" stop-color="#881337"/>
+      <stop offset="1" stop-color="#be185d"/>
+    </linearGradient>
+    <radialGradient id="or-glow" cx="0.22" cy="0.16" r="0.75">
+      <stop offset="0" stop-color="#fb7185" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#fb7185" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="or-grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="or-bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#fb7185"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#or-bg)"/>
+  <rect width="1200" height="800" fill="url(#or-grid)"/>
+  <rect width="1200" height="800" fill="url(#or-glow)"/>
+
+  <rect x="110" y="120" width="980" height="560" rx="24" fill="#1b0510" stroke="#ffffff" stroke-opacity="0.12"/>
+  <circle cx="150" cy="160" r="7" fill="#ff5f57"/>
+  <circle cx="176" cy="160" r="7" fill="#febc2e"/>
+  <circle cx="202" cy="160" r="7" fill="#28c840"/>
+  <text x="238" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="21" font-weight="700" fill="#fda4af">openrep</text>
+  <rect x="928" y="145" width="122" height="31" rx="15.5" fill="#ffffff" fill-opacity="0.06" stroke="#fb7185" stroke-opacity="0.5"/>
+  <text x="989" y="166" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" fill="#fda4af">SQLite · local</text>
+  <line x1="110" y1="189" x2="1090" y2="189" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <text x="150" y="243" font-size="20" font-weight="600" fill="#ffe4e6">Dashboard</text>
+  <rect x="930" y="218" width="120" height="36" rx="18" fill="#e11d48"/>
+  <text x="990" y="241" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">+ Log set</text>
+
+  <!-- chart card -->
+  <rect x="150" y="290" width="560" height="340" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="180" y="336" font-size="17" font-weight="600" fill="#fecdd3">Training volume</text>
+  <text x="180" y="360" font-size="13" fill="#fda4af">last 7 sessions</text>
+
+  <line x1="200" y1="600" x2="670" y2="600" stroke="#ffffff" stroke-opacity="0.12"/>
+  <rect x="210" y="530" width="40" height="70" rx="6" fill="#fb7185" fill-opacity="0.35"/>
+  <rect x="280" y="505" width="40" height="95" rx="6" fill="#fb7185" fill-opacity="0.35"/>
+  <rect x="350" y="480" width="40" height="120" rx="6" fill="#fb7185" fill-opacity="0.4"/>
+  <rect x="420" y="490" width="40" height="110" rx="6" fill="#fb7185" fill-opacity="0.4"/>
+  <rect x="490" y="450" width="40" height="150" rx="6" fill="#fb7185" fill-opacity="0.5"/>
+  <rect x="560" y="425" width="40" height="175" rx="6" fill="#fb7185" fill-opacity="0.6"/>
+  <rect x="630" y="395" width="40" height="205" rx="6" fill="url(#or-bar)"/>
+  <text x="650" y="384" text-anchor="middle" font-size="13" font-weight="600" fill="#fda4af">12.4k</text>
+  <text x="230" y="624" font-size="12" fill="#fda4af">wk1</text>
+  <text x="440" y="624" font-size="12" fill="#fda4af">wk4</text>
+  <text x="650" y="624" text-anchor="middle" font-size="12" fill="#fda4af">now</text>
+
+  <!-- right cards -->
+  <rect x="730" y="290" width="320" height="160" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="760" y="330" font-size="14" fill="#fda4af">Personal record</text>
+  <text x="760" y="386" font-size="42" font-weight="700" fill="#ffe4e6">225 lb</text>
+  <text x="760" y="414" font-size="14" fill="#fda4af">Back squat</text>
+
+  <rect x="730" y="470" width="320" height="160" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="760" y="510" font-size="14" fill="#fda4af">Estimated 1RM</text>
+  <text x="760" y="566" font-size="42" font-weight="700" fill="#ffe4e6">264 lb</text>
+  <text x="760" y="594" font-size="14" fill="#4ade80">▲ 6.2% this month</text>
+</svg>

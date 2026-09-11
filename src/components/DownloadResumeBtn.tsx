@@ -1,21 +1,13 @@
-import React from "react";
-import { Button } from "./ui/button";
 import { Download } from "lucide-react";
+import { Button } from "./ui/button";
 
-function DownloadResumeBtn() {
+export default function DownloadResumeBtn() {
   return (
-    <Button
-      variant="outline"
-      size="lg"
-      className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg transition-all duration-300 bg-transparent"
-      asChild
-    >
+    <Button variant="outline" size="lg" asChild>
       <a href="/resume.pdf" download>
-        <Download className="mr-2 h-4 w-4" />
-        Download Resume
+        <Download />
+        Download resume
       </a>
     </Button>
   );
 }
-
-export default DownloadResumeBtn;
