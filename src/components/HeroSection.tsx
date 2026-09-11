@@ -40,9 +40,9 @@ export default function HeroSection() {
               </h2>
 
               <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-                I build intelligent systems that solve real-world problems —
-                specializing in deep learning, computer vision, and scalable
-                software architecture.
+                I build products end to end — APIs, backend systems, and
+                polished front ends. I work AI-first, pairing with tools like
+                Claude Code and Codex to ship fast without cutting corners.
               </p>
             </div>
 
@@ -95,15 +95,15 @@ export default function HeroSection() {
               />
             </div>
             <div className="animate-float absolute -bottom-5 -left-4 rounded-xl border bg-background/80 px-4 py-3 shadow-lg backdrop-blur">
-              <p className="text-sm font-semibold">Deep Learning</p>
-              <p className="text-xs text-muted-foreground">Computer Vision</p>
+              <p className="text-sm font-semibold">AI-First Workflow</p>
+              <p className="text-xs text-muted-foreground">Claude Code · Codex</p>
             </div>
             <div
               className="animate-float-slow absolute -top-4 -right-3 rounded-xl border bg-background/80 px-4 py-3 shadow-lg backdrop-blur"
               style={{ animationDelay: "1s" }}
             >
-              <p className="text-sm font-semibold">Software Engineering</p>
-              <p className="text-xs text-muted-foreground">Scalable Systems</p>
+              <p className="text-sm font-semibold">Full-Stack Engineering</p>
+              <p className="text-xs text-muted-foreground">APIs · Interfaces</p>
             </div>
           </div>
         </div>

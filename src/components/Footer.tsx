@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { site, navLinks } from "@/lib/site";
+import BadAppleEasterEgg from "./BadAppleEasterEgg";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -16,7 +17,7 @@ export default function Footer() {
               {site.name}
             </a>
             <p className="max-w-xs text-sm text-muted-foreground">
-              {site.role} — building intelligent systems for the real world.
+              {site.role} — building products end to end, AI-first.
             </p>
           </div>
 
@@ -62,11 +63,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-3 border-t pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {year} {site.name}. All rights reserved.
           </p>
-          <p>Built with Next.js &amp; Tailwind CSS.</p>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-5">
+            <BadAppleEasterEgg />
+            <p>Built with Next.js &amp; Tailwind CSS.</p>
+          </div>
         </div>
       </div>
     </footer>

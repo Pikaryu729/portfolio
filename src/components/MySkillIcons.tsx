@@ -1,31 +1,30 @@
 import PythonOriginal from "devicons-react/icons/PythonOriginal";
-import ReactOriginal from "devicons-react/icons/ReactOriginal";
-import ScikitlearnOriginal from "devicons-react/icons/ScikitlearnOriginal";
-import AmazonWebServices from "devicons-react/icons/AmazonwebservicesOriginalWordmark";
-import DockerOriginal from "devicons-react/icons/DockerOriginal";
-import FastapiOriginal from "devicons-react/icons/FastapiOriginal";
-import Git from "devicons-react/icons/GitOriginal";
-import LinuxOriginal from "devicons-react/icons/LinuxOriginal";
-import NextjsOriginal from "devicons-react/icons/NextjsOriginal";
-import PandasOriginal from "devicons-react/icons/PandasOriginal";
-import PostgresqlOriginal from "devicons-react/icons/PostgresqlOriginal";
 import TypescriptOriginal from "devicons-react/icons/TypescriptOriginal";
+import GoOriginal from "devicons-react/icons/GoOriginal";
+import NodejsOriginal from "devicons-react/icons/NodejsOriginal";
+import ReactOriginal from "devicons-react/icons/ReactOriginal";
+import NextjsOriginal from "devicons-react/icons/NextjsOriginal";
+import FastapiOriginal from "devicons-react/icons/FastapiOriginal";
+import PostgresqlOriginal from "devicons-react/icons/PostgresqlOriginal";
+import DockerOriginal from "devicons-react/icons/DockerOriginal";
+import AmazonWebServices from "devicons-react/icons/AmazonwebservicesOriginalWordmark";
+import { ClaudeIcon, OpenAiIcon } from "@/components/icons/AiIcons";
 
 const size = 40;
 
 const skills = [
+  { label: "Claude Code", icon: <ClaudeIcon size={size} /> },
+  { label: "Codex", icon: <OpenAiIcon size={size} /> },
   { label: "Python", icon: <PythonOriginal size={size} /> },
   { label: "TypeScript", icon: <TypescriptOriginal size={size} /> },
+  { label: "Go", icon: <GoOriginal size={size} /> },
+  { label: "Node.js", icon: <NodejsOriginal size={size} /> },
   { label: "React", icon: <ReactOriginal size={size} /> },
   { label: "Next.js", icon: <NextjsOriginal size={size} /> },
   { label: "FastAPI", icon: <FastapiOriginal size={size} /> },
-  { label: "scikit-learn", icon: <ScikitlearnOriginal size={size} /> },
-  { label: "Pandas", icon: <PandasOriginal size={size} /> },
   { label: "PostgreSQL", icon: <PostgresqlOriginal size={size} /> },
   { label: "Docker", icon: <DockerOriginal size={size} /> },
   { label: "AWS", icon: <AmazonWebServices size={size} /> },
-  { label: "Linux", icon: <LinuxOriginal size={size} /> },
-  { label: "Git", icon: <Git size={size} /> },
 ];
 
 export default function MySkillIcons() {
