@@ -1,8 +1,8 @@
 export const site = {
   name: "Ryushin Wells",
-  role: "Machine Learning & Software Engineer",
+  role: "Software Engineer",
   description:
-    "Machine learning and software engineer building intelligent systems that solve real-world problems — specializing in deep learning, computer vision, and scalable software architecture.",
+    "Software engineer building products end to end — backend systems, APIs, and polished front ends. AI-first, pairing with tools like Claude Code and Codex to ship faster without sacrificing quality.",
   url: "https://ryushinwells.com",
   socials: [
     { label: "GitHub", url: "https://github.com/Pikaryu729" },
