@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="pandatrace data lineage graph">
+  <defs>
+    <linearGradient id="pt-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#042f2b"/>
+      <stop offset="0.55" stop-color="#065f5a"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+    <radialGradient id="pt-glow" cx="0.78" cy="0.16" r="0.75">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="pt-grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <marker id="pt-arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L7 3L0 6z" fill="#5eead4"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#pt-bg)"/>
+  <rect width="1200" height="800" fill="url(#pt-grid)"/>
+  <rect width="1200" height="800" fill="url(#pt-glow)"/>
+
+  <rect x="110" y="120" width="980" height="560" rx="24" fill="#04121a" stroke="#ffffff" stroke-opacity="0.12"/>
+  <circle cx="150" cy="160" r="7" fill="#ff5f57"/>
+  <circle cx="176" cy="160" r="7" fill="#febc2e"/>
+  <circle cx="202" cy="160" r="7" fill="#28c840"/>
+  <text x="238" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="21" font-weight="700" fill="#7dd3fc">pandatrace</text>
+  <rect x="928" y="145" width="122" height="31" rx="15.5" fill="#ffffff" fill-opacity="0.06" stroke="#5eead4" stroke-opacity="0.5"/>
+  <text x="989" y="166" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" fill="#5eead4">PyPI v1.2.0</text>
+  <line x1="110" y1="189" x2="1090" y2="189" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <text x="150" y="238" font-size="15" font-weight="600" fill="#5eead4" letter-spacing="2">DATA LINEAGE</text>
+  <text x="150" y="270" font-size="24" fill="#e6fffb">Every operation, recorded into one shared ledger</text>
+
+  <!-- callout -->
+  <path d="M492 330 V396" stroke="#fbbf24" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <rect x="372" y="292" width="240" height="40" rx="20" fill="#78350f" fill-opacity="0.55" stroke="#fbbf24" stroke-opacity="0.65"/>
+  <circle cx="398" cy="312" r="6" fill="#fbbf24"/>
+  <text x="502" y="318" text-anchor="middle" font-size="16" font-weight="600" fill="#fde68a">2 nulls traced to price</text>
+
+  <!-- nodes -->
+  <text x="240" y="386" text-anchor="middle" font-size="13" fill="#5eead4" letter-spacing="1">SOURCE</text>
+  <rect x="150" y="400" width="180" height="80" rx="14" fill="#0b2b2b" stroke="#34d399" stroke-opacity="0.5"/>
+  <text x="240" y="447" text-anchor="middle" font-family="ui-monospace, monospace" font-size="19" fill="#e6fffb">orders.csv</text>
+
+  <text x="490" y="386" text-anchor="middle" font-size="13" fill="#5eead4" letter-spacing="1">MERGE</text>
+  <rect x="390" y="400" width="200" height="80" rx="14" fill="#0b2b2b" stroke="#34d399" stroke-opacity="0.5"/>
+  <text x="490" y="440" text-anchor="middle" font-family="ui-monospace, monospace" font-size="18" fill="#e6fffb">.merge(customers)</text>
+  <text x="490" y="464" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" fill="#5eead4">how="left"</text>
+
+  <text x="750" y="386" text-anchor="middle" font-size="13" fill="#5eead4" letter-spacing="1">ASSIGN</text>
+  <rect x="650" y="400" width="200" height="80" rx="14" fill="#0b2b2b" stroke="#34d399" stroke-opacity="0.5"/>
+  <text x="750" y="440" text-anchor="middle" font-family="ui-monospace, monospace" font-size="18" fill="#e6fffb">.assign(total)</text>
+  <text x="750" y="464" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" fill="#5eead4">price * qty</text>
+
+  <text x="985" y="386" text-anchor="middle" font-size="13" fill="#5eead4" letter-spacing="1">SORT</text>
+  <rect x="910" y="400" width="150" height="80" rx="14" fill="#0b2b2b" stroke="#34d399" stroke-opacity="0.5"/>
+  <text x="985" y="447" text-anchor="middle" font-family="ui-monospace, monospace" font-size="17" fill="#e6fffb">.sort_index()</text>
+
+  <path d="M330 440 H388" stroke="#5eead4" stroke-opacity="0.75" stroke-width="2" marker-end="url(#pt-arrow)"/>
+  <path d="M590 440 H648" stroke="#5eead4" stroke-opacity="0.75" stroke-width="2" marker-end="url(#pt-arrow)"/>
+  <path d="M850 440 H908" stroke="#5eead4" stroke-opacity="0.75" stroke-width="2" marker-end="url(#pt-arrow)"/>
+
+  <!-- ledger -->
+  <rect x="150" y="540" width="910" height="96" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="178" y="576" font-size="13" fill="#5eead4" letter-spacing="1.5">LEDGER.STEPS</text>
+  <text x="178" y="610" font-family="ui-monospace, monospace" font-size="17" fill="#cffafe">[ source_files ] → merge → assign → sort_index</text>
+  <circle cx="1020" cy="590" r="7" fill="#34d399"/>
+  <text x="1002" y="618" text-anchor="end" font-size="13" fill="#5eead4">4 steps · 0 hidden</text>
+</svg>
